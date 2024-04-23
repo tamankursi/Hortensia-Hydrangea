@@ -1,0 +1,325 @@
+:root {
+    --mb-section : 120px;
+    --mb-titleImage : 80px;
+    --mb-titleDesc : 30px;
+    --mb-imageText : 20px;
+    --mb-divDiv : 80px;
+}
+
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    height: 4000px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.all-title {
+    font-family: 'Lexend Exa', sans-serif;
+    margin-bottom: var(--mb-titleImage);
+}
+
+/* ===== SECTION UTAMA START ===== */
+
+.section-utama {
+    background-image: url(/img/bg-img.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--mb-section);
+}
+
+.wrapper-title-utama {
+    text-align: center;
+}
+
+.wrapper-title-utama h1 {
+    font-family: "Lexend Exa", sans-serif;
+    font-size: 5rem;
+    margin-bottom: var(--mb-titleDesc);
+}
+
+.wrapper-title-utama h4 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+/* ===== SECTION UTAMA END */
+
+/* ===== SECTION INTRO START ===== */
+
+.section-intro {
+    width: 100%;
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--mb-section);
+}
+
+.section-intro img {
+    width: 40%;
+}
+
+.section-intro p {
+    width: 40%;
+    text-align: center;
+}
+/* ===== SECTION INTRO END ===== */
+
+/* ===== SECTION KLASIFIKASI START ===== */
+
+.section-klasifikasi {
+    width: 100%;
+    text-align: center;
+    margin-bottom: var(--mb-section);
+}
+
+.container-klasifikasi {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wrapper-img-klasifikasi {
+    width: 15%;
+    text-align: center;
+}
+
+.wrapper-img-klasifikasi img {
+    width: 100%;
+    margin-bottom: var(--mb-imageText);
+}
+/* ===== SECTION KLASIFIKASI END ===== */
+
+/* ===== SECTION FAKTA ===== */
+
+.section-fakta {
+    width: 100%;
+    margin-bottom: var(--mb-section);
+}
+
+.container-fakta {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.desc-fakta {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    row-gap: 20px;
+}
+
+.desc-fakta h1 {
+    font-family: 'Lexend Exa', sans-serif;
+    margin-bottom: var(--mb-titleDesc);
+}
+
+span {
+    color: yellow;
+    font-weight: bold;
+}
+
+.img-fakta {
+    width: 30%;
+}
+
+.img-fakta img {
+    width: 100%;
+}
+/* ===== SECTION FAKTA END ===== */
+
+/* ===== SECTION PERAWATAN START ===== */
+
+.section-perawatan {
+    width: 100%;
+    margin-bottom: var(--mb-section);
+    text-align: center;
+}
+
+.container-perawatan {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--mb-divDiv);
+}
+
+.wrapper-img-perawatan {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-img-perawatan img {
+    width: 20%;
+}
+
+.wrapper-img-perawatan p {
+    width: 70%;
+}
+/* ===== SECTION PERAWATAN END ===== */
+
+
+/* ===== SECTION GALERI START ===== */
+.section-galeri {
+    width: 100%;
+    text-align: center;
+    margin-bottom: var(--mb-section);
+}
+
+.container-galeri {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    row-gap: var(--mb-divDiv);
+}
+
+.container-galeri img {
+    width: 70%;
+}
+/* ===== SECTION GALERI END ===== */
+
+
+/* ===== KALIMATKU ===== */
+.kalimatku {
+    width: 100%;
+    max-width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: var(--mb-section);
+}
+
+.kalimatku p {
+    font-size: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: white;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h2 {
+    margin-bottom: var(--mb-titleDesc);
+}
+
+
+
+/* MEDIA QUERY */
+/* Laptop */
+@media (max-width : 1366px ) {
+    html {
+        font-size: 90%;
+    }
+}
+
+/* Tablet */
+@media (max-width : 768px ) {
+
+    html {
+        font-size: 85%;
+    }
+
+    .all-title {
+        width: 80%;
+        margin: auto;
+        margin-bottom: var(--mb-titleImage);
+    }
+
+    /* SECTION UTAMA */
+    .wrapper-title-utama h1 {
+        font-size: 3.5rem;
+    }
+
+    /* SECTION INTRO */
+    .section-intro {
+        max-width: 80%;
+    }
+
+    .section-intro p {
+        width: 50%;
+    }
+
+    /* SECTION KLASIFIKASI */
+    .container-klasifikasi {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        row-gap: var(--mb-titleImage);
+    }
+
+    .wrapper-img-klasifikasi {
+        width: 50%;
+    }
+
+    /* SECTION FAKTA */
+    .container-fakta {
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--mb-titleDesc);
+    }
+
+    .desc-fakta {
+        width: 80%;
+        text-align: center;
+    }
+
+    .desc-fakta p {
+        width: 90%;
+        margin: auto;
+    }
+
+    .img-fakta {
+        width: 50%;
+    }
+
+    /* SECTION PERAWATAN */
+    .wrapper-img-perawatan img {
+        width: 30%;
+    }
+
+    .wrapper-img-perawatan p {
+        width: 60%;
+    }
+
+    /* SECTION GALERI */
+    .container-galeri {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Phone Mobile */
+@media (max-width : 450px ) {
+
+    html {
+        font-size: 65%;
+    }
+}
