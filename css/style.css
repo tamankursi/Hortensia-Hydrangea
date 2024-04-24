@@ -284,6 +284,14 @@ footer h2 {
         width: 50%;
     }
 
+    .wrapper-img-klasifikasi img {
+        transition: transform 0.3s ease;
+    }
+
+    .wrapper-img-klasifikasi img:hover {
+    transform: scale(1.25);
+    }
+
     /* SECTION FAKTA */
     .container-fakta {
         display: flex;
