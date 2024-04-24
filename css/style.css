@@ -104,6 +104,11 @@ a {
 .wrapper-img-klasifikasi img {
     width: 100%;
     margin-bottom: var(--mb-imageText);
+    transition: transform 0.3s ease;
+}
+
+.wrapper-img-klasifikasi img:hover {
+    transform: scale(1.25);
 }
 /* ===== SECTION KLASIFIKASI END ===== */
 
