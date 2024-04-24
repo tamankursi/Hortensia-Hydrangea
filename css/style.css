@@ -102,10 +102,6 @@ a {
     text-align: center;
 }
 
-.wrapper-img-klasifikasi a, h4 {
-    color: white;
-}
-
 .wrapper-img-klasifikasi img {
     width: 100%;
     margin-bottom: var(--mb-imageText);
