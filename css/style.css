@@ -22,6 +22,7 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 .all-title {
@@ -32,7 +33,7 @@ a {
 /* ===== SECTION UTAMA START ===== */
 
 .section-utama {
-    background-image: url(img/bg-img.jpg);
+    background-image: url(../img/bg-img.jpg);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -104,6 +105,11 @@ a {
 .wrapper-img-klasifikasi img {
     width: 100%;
     margin-bottom: var(--mb-imageText);
+    transition: transform 0.3s ease;
+}
+
+.wrapper-img-klasifikasi img:hover {
+    transform: scale(1.25);
 }
 /* ===== SECTION KLASIFIKASI END ===== */
 
