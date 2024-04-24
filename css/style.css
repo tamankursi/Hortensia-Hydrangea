@@ -33,7 +33,11 @@ a {
 /* ===== SECTION UTAMA START ===== */
 
 .section-utama {
+<<<<<<< HEAD
     background-image: url(../img/bg-img.jpg);
+=======
+    background-image: url("../img/bg-img.jpg");
+>>>>>>> d411526a9a789daa03bc4c6cb327a565d55ff840
     width: 100%;
     height: 100vh;
     background-size: cover;
